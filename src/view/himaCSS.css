@@ -1,0 +1,129 @@
+/*
+CSS information and examples:
+https://docs.oracle.com/javafx/2/get_started/css.htm 
+
+https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html#label
+
+https://docs.oracle.com/javafx/2/text/jfxpub-text.htm
+
+https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/apply-css.htm#CHDGHCDG
+*/
+
+/* .root updates the style for the root node of the fxml file - This is a class selector for the root class
+*/
+.root { 
+    -fx-accent: gray;
+    -fx-text-box-border: black;
+    -fx-border-color: black;
+    -fx-focus-color: #f8bb00;   
+    -fx-faint-focus-color: transparent;   
+    -fx-background-color: #aebdcc;       
+}
+/* #header changes the font size for any object with the node id="header" - This is an ID style selector
+*/
+#header {
+   -fx-font-size: 24px;
+   -fx-font-family: "Arial Black";
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+/* #message changes the font size for any object with the node id="message" - This is an ID style selector
+*/
+#message {
+    -fx-font-size: 16px;  
+    -fx-text-fill: #1e4994;
+}
+/* #message2 changes the font size for any object with the node id="message2" - This is an ID style selector
+*/
+#message2 {
+    -fx-font-size: 16px;  
+    -fx-text-fill: red;
+}
+/* .text-field-error changes the font color for the message when there is an error - This is a custom selector 
+    that is added the the style sheets for these objects in the java code */
+.text-field-error {
+    -fx-border-color: red;
+    -fx-faint-focus-color: transparent;      
+}
+   
+/* .button changes the border color for all buttons - This is called a class selector */
+.button {
+    -fx-border-color: black;      
+    -fx-font-size: 14px;
+}
+/* .button changes the border color for all buttons when they are focused -- This is a pseudo-class selector*/
+.button:focused {
+    -fx-border-color: #f8bb00;
+    -fx-focus-color: #f8bb00;   
+    -fx-faint-focus-color: transparent;    
+}
+/* .button:hover changes the background color for all buttons when they are hovered - This is a pseudo-class selector*/
+.button:hover {
+    -fx-background-color: #50a0eb59;
+    -fx-font-size: 14.5px;
+}
+/* .combo-box changes the font size and border for all combo box objects - This is a class selector */
+.combo-box {
+    -fx-border-color: black;  
+    -fx-font-size: 14px;
+    -fx-accent: #50a0eb59;
+}
+/* .combo-box:focused changes border for all combo box objects that are focused - This is a pseudo-class selector */
+.combo-box:focused {
+    -fx-border-color: #f8bb00;
+    -fx-focus-color: #f8bb00;   
+    -fx-faint-focus-color: transparent;  
+    -fx-font-size: 14.5px;
+}
+/* .combo-box:hover changes background color for all combo box objects that are hovered - This is a pseudo-class selector */
+.combo-box:hover {
+    -fx-background-color: #50a0eb59;  
+    -fx-font-size: 14.5px;
+}
+.combo-box-custom {
+    -fx-border-color: red;
+    -fx-focus-color: red;    
+    -fx-faint-focus-color: transparent;    
+}
+.combo-box-custom:focused {
+    -fx-border-color: red;
+    -fx-focus-color: red;    
+    -fx-faint-focus-color: transparent;    
+}
+/* .button changes the font size and border for all table view objects - This is a class selector */
+.table-view {
+    -fx-border-color: black;
+    -fx-font-size: 14 px;
+    -fx-accent: #50a0eb59;
+}
+/* .button changes border for all table view objects that are selected - This is a pseudo-class selector
+*/
+.table-view:focused{
+    -fx-border-color: #f8bb00;
+    -fx-focus-color: #f8bb00;   
+    -fx-faint-focus-color: #f8bb00;      
+}
+/*Change the background color of any table cells that have data
+.table-cell:filled { 
+    -fx-background-color: #f8bb00;
+}*/
+
+.tableview:hover {
+    -fx-background-color: #50a0eb59;
+}
+
+.table-view-custom {
+    -fx-border-color: red;
+    -fx-font-size: 14 px;
+}
+.table-view-custom:focused{
+    -fx-border-color: red;
+    -fx-focus-color: red;   
+    -fx-faint-focus-color: transparent;       
+}
+.text-field {
+    -fx-alignment: center;
+}
+
+
+
+
