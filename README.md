@@ -1,5 +1,5 @@
 # java_fx_inventory_application
-Home Inventory Management Application (HIMA) uses object-oriented JavaFX GUIs and the model, view, controller architecture to provide a local application that tracks home inventory items for multiple user logins. 
+Home Inventory Management Application (HIMA) uses object-oriented JavaFX GUIs and the model, view, controller architecture to provide a local application that persistently tracks home inventory items for multiple user logins. 
 <br><br>
 Access the source code: <a href="https://github.com/ffm5113/java_fx_inventory_application/tree/main/src">JavaFX Inventory Application Project Source Code</a>
 <br>
